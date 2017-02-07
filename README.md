@@ -18,16 +18,16 @@ True = metrical, False = imperial
 
 abbreviation defines the standard used unit, so you dont have to type the unit every time anew. => abbreviation ="m" => 12+12= 24m
 
-Without IOC:
+##Without IOC:
 
             ConversionFacade.Convert(input, toMetric)
-Or:
+#Or:
 
             ConversionFacade.Convert(input, abbreviation, toMetric)
 
-With IOC:
+##With IOC:
 
-Registration:
+#Registration:
 
             builder.RegisterType<ConversionTokenizer>().As<IConversionTokenizer>();
             builder.RegisterType<ConversionModelBuilder>().As<IConversionModelBuilder>();
@@ -49,7 +49,7 @@ Registration:
             builder.RegisterType<ImperialToMetricConverter>().As<IImperialToMetricConverter>();
             builder.RegisterType<MetricToImperialConverter>().As<IMetricToImperialConverter>();
             
-usage Example:
+#usage Example:
             
         UsageClass
         {
@@ -66,7 +66,7 @@ usage Example:
                         mConversionFactory = conversionFactory;
             }
         }
-Or:         
+#Or:         
 
         UsageClass
         {
@@ -84,7 +84,7 @@ Or:
             }
         }
         
-UnitAbbreviations:
+##UnitAbbreviations:
 
 Millimeters = "mm";
 Centimeters = "cm";
