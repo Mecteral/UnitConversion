@@ -260,7 +260,7 @@ We do this in the class `UnitConverter`:
 ```
 The `UnitConverter` takes in our expression that we just created and a bool value, which defines if the convert into the metric or the imperial system.
 
-#####In the UnitConverter we have to Adjust the Methods:
+#####In UnitConverter we have to adjust the methods:
 
 `CalculateIfNoConversionIsNeeded`,
 `CreateReplacementIfBothSidesOfTheOperationNeedToBeConvertedForImperial`,
