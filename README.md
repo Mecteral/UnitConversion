@@ -95,52 +95,68 @@ The Library was built with extension in mind
 | Meters |"m"|
 |  Kilometers  | "km"  |
 
-Millimeters = "mm";
-Centimeters = "cm";
-Meters = "m";
-Kilometers = "km";
+####Metrical Mass
+|Unit| Abbreviation|
+|----|---|---|---|---|
+| Milligram | "mg"|
+| Gram |"g"|
+| Kilogram |"kg"|
+|  Ton  | "t"  |
 
-Milligram = "mg";
-Gram = "g";
-Kilogram = "kg";
-Ton = "t";
+####Metrical Volume
+|Unit| Abbreviation|
+|----|---|---|---|---|
+| Milliliters | "ml"|
+| Centiliters |"cl"|
+| Liters |"l"|
+|  Hectoliters  | "hl"  |
 
-Milliliters = "ml";
-Centiliters = "cl";
-Liters = "l";
-Hectoliters = "hl";
+####Metrical Area
+|Unit| Abbreviation|
+|----|---|---|---|---|
+| Squaremillimeters | "qmm"|
+| Squarecentimeters |"qcm"|
+| Sqauremeters |"qm"|
+|  Squarekilometers  | "qkm"  |
+|  Hectas  | "ha"  |
 
-Squaremillimeters = "qmm";
-Squarecentimeters = "qcm";
-Sqauremeters = "qm";
-Squarekilometers = "qkm";
-Hectas = "ha";
+####Imperial Length
+|Unit| Abbreviation|
+|----|---|---|---|---|
+| Though | "th"|
+| Inch |"in"|
+| Foot |"ft"|
+|  Yard  | "yd"  |
+|  Chain  | "ch"  |
+| Furlong |"fur"|
+| Mile |"mI"|
+|  League  | "lea"  |
+|  Fathom  | "ftm"  |
 
-Though = "th";
-Inch = "in";
-Foot = "ft";
-Yard = "yd";
-Chain = "ch";
-Furlong = "fur";
-Mile = "mI";
-League = "lea";
-Fathom = "ftm";
+####Imperial Area
+|Unit| Abbreviation|
+|----|---|---|---|---|
+| Squarefoot | "sft"|
+| Perch |"perch"|
+| Rood |"rood"|
+|  Acre  | "acre"  |
 
-Squarefoot = "sft";
-Perch = "perch";
-Rood = "rood";
-Acre = "acre";
+####Imperial Volume
+|Unit| Abbreviation|
+|----|---|---|---|---|
+| FluidOunce | "floz"|
+| Gill |"gi"|
+| Pint |"pt"|
+|  Quart  | "qt"  |
+|  Gallon  | "gal"  |
 
-FluidOunce = "floz";
-Gill = "gi";
-Pint = "pt";
-Quart = "qt";
-Gallon = "gal";
-
-Grain = "gr";
-Drachm = "dr";
-Ounce = "oz";
-Pound = "lb";
-Stone = "st";
-HundredWeight = "cwt";
-ImperialTon = "it";
+####Imperial Mass
+|Unit| Abbreviation|
+|----|---|---|---|---|
+| Grain | "gr"|
+| Drachm |"dr"|
+| Ounce |"oz"|
+|  Pound  | "lb"  |
+|  Stone  | "st"  |
+|  HundredWeight  | "cwt"  |
+|  ImperialTon  | "it"  |
