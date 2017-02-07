@@ -228,7 +228,7 @@ First we have to define a new `ConversionExpression` for our length example:
     }
 ```
 
-The `ImperialLengthExpression` iherits from `AnConversionToken` and holds:
+The `ImperialLengthExpression` inherits from `AnConversionExpression` and holds:
 Value => which is the calculated value of our `MetricLengthToken`.
 Visitor => which is used to visit the expression later on in the process.
 ReplaceChild => is only used with operators, as those hold a child `left` and a child `right`.
