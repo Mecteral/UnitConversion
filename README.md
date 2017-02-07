@@ -95,7 +95,7 @@ The Library was built with extension in mind
 | Centimeters |"cm"|    | Gram |"g"|            | Centiliters |"cl"|    | Squarecentimeters |"qcm"|
 | Meters |"m"|          | Kilogram |"kg"|       | Liters |"l"|          | Sqauremeters |"qm"|
 |  Kilometers  | "km"  ||  Ton  | "t"  |        |  Hectoliters|"hl"|    |  Squarekilometers  | "qkm"  |
-         |||||||||                                                               |  Hectas  | "ha"  |
+
 
 ####Imperial Length
 |Unit| Abbreviation|
