@@ -1,15 +1,15 @@
 # UnitConversion
 
-The UnitConverter is a easy to use system for conversions between the metrical and imperial systems.
+The Library is an easy to use system for conversions between the metrical and imperial systems.
 
-The Unitconverter supports basic Operations ( + , - , * , / ).
-The UnitConverter support mixed input: " 12m + 13ft " and throws an exception if the systems cant be calculated (" 12l + 13m ").
+The Library supports basic operations ( + , - , * , / ).
+The Library supports mixed input: " 12m + 13ft " and throws an exception if the systems can't be calculated (" 12l + 13m ").
 
 Usage:
 
 The Unitconverter can be used with or without IOC.
 
-the string is the input which needs to be formatted like => 12m+12km+23ft
+the string is the input which needs to be formatted like => `12m+12km+23ft`
 "number + abbreviation"
 
 The bool defines if the system is converted into the metrical or the imperial system
