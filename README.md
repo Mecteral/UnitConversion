@@ -15,7 +15,7 @@ string is the input which needs to be formatted like => `12m+12km+23ft`
 
 bool defines if the system is converted into the metrical or the imperial system => true = metrical, false = imperial
 
-abbreviation defines the standard used unit, so you dont have to type the unit every time anew. => abbreviation ="m" => 12+12+12cm= 24,12m
+abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 24,12m
 
 ```c#
             ConversionFacade.Convert(input, toMetric)
