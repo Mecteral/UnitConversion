@@ -4,27 +4,29 @@ The Library is an easy to use system for conversions between the metrical and im
 
 The Library supports basic operations ( + , - , * , / ).
 
-The Library supports mixed input: " 12m + 13ft " and throws an exception if the systems can't be calculated (" 12l + 13m ").
+The Library supports mixed input: ``12m + 13ft`` and throws an exception if the systems can't be calculated ``12l + 13m``.
 
 ##Usage:
 ```c#
             `ConversionFacade.Convert(input, abbreviation, toMetric)`
 ```
-the string is the input which needs to be formatted like => `12m+12km+23ft`
+string is the input which needs to be formatted like => `12m+12km+23ft`
 "number + abbreviation"
 
-The bool defines if the system is converted into the metrical or the imperial system
+bool defines if the system is converted into the metrical or the imperial system
 
 True = metrical, False = imperial
 
-abbreviation defines the standard used unit, so you dont have to type the unit every time anew. => abbreviation ="m" => 12+12= 24m
+abbreviation defines the standard used unit, so you dont have to type the unit every time anew. => abbreviation ="m" => 12+12+12cm= 24,12m
+
 ```c#
             ConversionFacade.Convert(input, toMetric)
 ```
-###Or:
+####Or:
 ```c#
             ConversionFacade.Convert(input, abbreviation, toMetric)
 ```
+The Library was built with
 ##With IOC:
 
 ###Registration:
@@ -67,7 +69,7 @@ abbreviation defines the standard used unit, so you dont have to type the unit e
             }
         }
 ```
-###Or:         
+####Or:         
 ```c#
         UsageClass
         {
