@@ -24,8 +24,9 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
 ```c#
             ConversionFacade.Convert(input, abbreviation, toMetric)
 ```
-The Library was built with
-##With IOC:
+
+The Library was built with extension in mind
+##If you use IOC:
 
 ###Registration:
 ```c#
@@ -86,6 +87,12 @@ The Library was built with
         }
 ```   
 ##UnitAbbreviations:
+
+| Millimeters | "mm"|
+|----|---|---|---|---|
+| Centimeters |"cm"|
+| Meters |"m"|
+|  Kilometers  | "km"  |
 
 Millimeters = "mm";
 Centimeters = "cm";
