@@ -7,9 +7,9 @@ The Library supports basic operations ( + , - , * , / ).
 The Library supports mixed input: " 12m + 13ft " and throws an exception if the systems can't be calculated (" 12l + 13m ").
 
 ##Usage:
-
-The Unitconverter can be used with or without IOC.
-
+```c#
+            `ConversionFacade.Convert(input, abbreviation, toMetric)`
+```
 the string is the input which needs to be formatted like => `12m+12km+23ft`
 "number + abbreviation"
 
@@ -18,18 +18,17 @@ The bool defines if the system is converted into the metrical or the imperial sy
 True = metrical, False = imperial
 
 abbreviation defines the standard used unit, so you dont have to type the unit every time anew. => abbreviation ="m" => 12+12= 24m
-
-##Without IOC:
-
+```c#
             ConversionFacade.Convert(input, toMetric)
+```
 ###Or:
-
+```c#
             ConversionFacade.Convert(input, abbreviation, toMetric)
-
+```
 ##With IOC:
 
 ###Registration:
-
+```c#
             builder.RegisterType<ConversionTokenizer>().As<IConversionTokenizer>();
             builder.RegisterType<ConversionModelBuilder>().As<IConversionModelBuilder>();
             builder.RegisterType<ReadableOutputCreator>().As<IReadableOutputCreator>();
@@ -49,9 +48,9 @@ abbreviation defines the standard used unit, so you dont have to type the unit e
                     });
             builder.RegisterType<ImperialToMetricConverter>().As<IImperialToMetricConverter>();
             builder.RegisterType<MetricToImperialConverter>().As<IMetricToImperialConverter>();
-            
+``` 
 ###usage Example:
-            
+```c#
         UsageClass
         {
             readonly Func<IConversionFacade> mConversionFactory;
@@ -67,8 +66,9 @@ abbreviation defines the standard used unit, so you dont have to type the unit e
                         mConversionFactory = conversionFactory;
             }
         }
+```
 ###Or:         
-
+```c#
         UsageClass
         {
             readonly Func<IConversionFacade> mConversionFactory;
@@ -84,7 +84,7 @@ abbreviation defines the standard used unit, so you dont have to type the unit e
                         mConversionFactory = conversionFactory;
             }
         }
-        
+```   
 ##UnitAbbreviations:
 
 Millimeters = "mm";
