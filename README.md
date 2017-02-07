@@ -86,14 +86,15 @@ The Library was built with extension in mind
             }
         }
 ```   
-##UnitAbbreviations:
-####Metrical Lenght
-|Unit| Abbreviation|
-|----|---|---|---|---|
-| Millimeters | "mm"|
-| Centimeters |"cm"|
-| Meters |"m"|
-|  Kilometers  | "km"  |
+##UnitAbbreviations:  
+
+####Metrical Lenght     ####Metrical Mass
+|Unit| Abbreviation|    |Unit| Abbreviation|
+|----|---|---|---|---|  |----|---|---|---|---|
+| Millimeters | "mm"|   | Milligram | "mg"|
+| Centimeters |"cm"|    | Gram |"g"|
+| Meters |"m"|          | Kilogram |"kg"|
+|  Kilometers  | "km"  ||  Ton  | "t"  |
 
 ####Metrical Mass
 |Unit| Abbreviation|
