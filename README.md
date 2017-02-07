@@ -88,7 +88,7 @@ The Library was built with extension in mind
 ```   
 ##UnitAbbreviations:  
 
-####Metrical Lenght                  Metrical Mass    
+####Metrical Lenght & Mass    
 |Unit| Abbreviation|    |Unit| Abbreviation|    
 |----|---|---|---|---|  |----|---|---|---|---|  
 | Millimeters | "mm"|   | Milligram | "mg"|     
@@ -96,50 +96,34 @@ The Library was built with extension in mind
 | Meters |"m"|          | Kilogram |"kg"|      
 |  Kilometers  | "km"  ||  Ton  | "t"  |    
 
-####Metrical Volume                             Metrical Area
+####Metrical Volume & Area
 |Unit| Abbreviation|    |Unit| Abbreviation|
 |----|---|---|---|---|  |----|---|---|---|---|
 | Milliliters | "ml"|   | Squaremillimeters | "qmm"|
 | Centiliters |"cl"|    | Squarecentimeters |"qcm"|
 | Liters |"l"|          | Sqauremeters |"qm"|
 |  Hectoliters|"hl"|    |  Squarekilometers  | "qkm"  |
-####Imperial Length
-|Unit| Abbreviation|
-|----|---|---|---|---|
-| Though | "th"|
-| Inch |"in"|
-| Foot |"ft"|
-|  Yard  | "yd"  |
-|  Chain  | "ch"  |
-| Furlong |"fur"|
-| Mile |"mI"|
-|  League  | "lea"  |
-|  Fathom  | "ftm"  |
 
-####Imperial Area
-|Unit| Abbreviation|
-|----|---|---|---|---|
-| Squarefoot | "sft"|
-| Perch |"perch"|
-| Rood |"rood"|
-|  Acre  | "acre"  |
+####Imperial Length & Area
+|Unit| Abbreviation|    |Unit| Abbreviation|
+|----|---|---|---|---|  |----|---|---|---|---|
+| Though | "th"|        | Squarefoot | "sft"|
+| Inch |"in"|           | Perch |"perch"|
+| Foot |"ft"|           | Rood |"rood"|
+|  Yard  | "yd"  |      |  Acre  | "acre"  |
+|  Chain  | "ch"  |     
+| Furlong |"fur"|       
+| Mile |"mI"|           
+|  League  | "lea"  |   
+|  Fathom  | "ftm"  |   
 
-####Imperial Volume
-|Unit| Abbreviation|
-|----|---|---|---|---|
-| FluidOunce | "floz"|
-| Gill |"gi"|
-| Pint |"pt"|
-|  Quart  | "qt"  |
-|  Gallon  | "gal"  |
-
-####Imperial Mass
-|Unit| Abbreviation|
-|----|---|---|---|---|
-| Grain | "gr"|
-| Drachm |"dr"|
-| Ounce |"oz"|
-|  Pound  | "lb"  |
-|  Stone  | "st"  |
-|  HundredWeight  | "cwt"  |
-|  ImperialTon  | "it"  |
+####Imperial Mass & Volume
+|Unit| Abbreviation|    |Unit| Abbreviation|  
+|----|---|---|---|---|  |----|---|---|---|---|  
+| Grain | "gr"|         | FluidOunce | "floz"|  
+| Drachm |"dr"|         | Gill |"gi"|      
+| Ounce |"oz"|          | Pint |"pt"|     
+|  Pound  | "lb"  |     |  Quart  | "qt"  |    
+|  Stone  | "st"  |     |  Gallon  | "gal"  |  
+|HundredWeight|"cwt"|   
+|  ImperialTon  | "it"| 
