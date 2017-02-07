@@ -3,9 +3,10 @@
 The Library is an easy to use system for conversions between the metrical and imperial systems.
 
 The Library supports basic operations ( + , - , * , / ).
+
 The Library supports mixed input: " 12m + 13ft " and throws an exception if the systems can't be calculated (" 12l + 13m ").
 
-Usage:
+##Usage:
 
 The Unitconverter can be used with or without IOC.
 
