@@ -21,13 +21,13 @@ abbreviation defines the standard used unit, so you dont have to type the unit e
 ##Without IOC:
 
             ConversionFacade.Convert(input, toMetric)
-#Or:
+###Or:
 
             ConversionFacade.Convert(input, abbreviation, toMetric)
 
 ##With IOC:
 
-#Registration:
+###Registration:
 
             builder.RegisterType<ConversionTokenizer>().As<IConversionTokenizer>();
             builder.RegisterType<ConversionModelBuilder>().As<IConversionModelBuilder>();
@@ -49,7 +49,7 @@ abbreviation defines the standard used unit, so you dont have to type the unit e
             builder.RegisterType<ImperialToMetricConverter>().As<IImperialToMetricConverter>();
             builder.RegisterType<MetricToImperialConverter>().As<IMetricToImperialConverter>();
             
-#usage Example:
+###usage Example:
             
         UsageClass
         {
@@ -66,7 +66,7 @@ abbreviation defines the standard used unit, so you dont have to type the unit e
                         mConversionFactory = conversionFactory;
             }
         }
-#Or:         
+###Or:         
 
         UsageClass
         {
