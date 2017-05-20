@@ -6,7 +6,7 @@ The Library supports basic operations ( + , - , * , / ).
 
 The Library supports mixed input: ``12m + 13ft`` and throws an exception if the systems can't be calculated ``12l + 13m``.
 
-##Usage:
+##U sage:
 ```c#
             ConversionFacade.Convert(input, abbreviation, toMetric)
 ```
@@ -20,14 +20,14 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
 ```c#
             ConversionFacade.Convert(input, toMetric)
 ```
-####Or:
+#### Or:
 ```c#
             ConversionFacade.Convert(input, abbreviation, toMetric)
 ```
 
-##If you use IOC:
+## If you use IOC:
 
-###Registration:
+### Registration:
 ```c#
             builder.RegisterType<ConversionTokenizer>().As<IConversionTokenizer>();
             builder.RegisterType<ConversionModelBuilder>().As<IConversionModelBuilder>();
@@ -49,7 +49,7 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
             builder.RegisterType<ImperialToMetricConverter>().As<IImperialToMetricConverter>();
             builder.RegisterType<MetricToImperialConverter>().As<IMetricToImperialConverter>();
 ``` 
-###usage Example:
+### usage Example:
 ```c#
         UsageClass
         {
@@ -67,7 +67,7 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
             }
         }
 ```
-####Or:         
+#### Or:         
 ```c#
         UsageClass
         {
@@ -85,9 +85,9 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
             }
         }
 ```   
-##UnitAbbreviations:  
+## UnitAbbreviations:  
 
-####Metrical Lenght & Mass    
+#### Metrical Lenght & Mass    
 |Unit| Abbreviation|    |Unit| Abbreviation|    
 |----|---|---|---|---|  |----|---|---|---|---|  
 | Millimeters | "mm"|   | Milligram | "mg"|     
@@ -95,7 +95,7 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
 | Meters |"m"|          | Kilogram |"kg"|      
 |  Kilometers  | "km"  ||  Ton  | "t"  |    
 
-####Metrical Volume & Area
+#### Metrical Volume & Area
 |Unit| Abbreviation|    |Unit| Abbreviation|
 |----|---|---|---|---|  |----|---|---|---|---|
 | Milliliters | "ml"|   | Squaremillimeters | "qmm"|
@@ -103,7 +103,7 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
 | Liters |"l"|          | Sqauremeters |"qm"|
 |  Hectoliters|"hl"|    |  Squarekilometers  | "qkm"  |
 
-####Imperial Length & Area
+#### Imperial Length & Area
 |Unit| Abbreviation|    |Unit| Abbreviation|
 |----|---|---|---|---|  |----|---|---|---|---|
 | Though | "th"|        | Squarefoot | "sft"|
@@ -116,7 +116,7 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
 |  League  | "lea"  |   
 |  Fathom  | "ftm"  |   
 
-####Imperial Mass & Volume
+#### Imperial Mass & Volume
 |Unit| Abbreviation|    |Unit| Abbreviation|  
 |----|---|---|---|---|  |----|---|---|---|---|  
 | Grain | "gr"|         | FluidOunce | "floz"|  
@@ -127,11 +127,11 @@ abbreviation defines the standard used unit => abbreviation ="m" => 12+12+12cm= 
 |HundredWeight|"cwt"|   
 |  ImperialTon  | "it"| 
 
-##The Library was built with extension in mind.
+## The Library was built with extension in mind.
 
 The Library contains 3 key elements which can be extended for further functionality:
 
-###ConversionTokenizer
+### ConversionTokenizer
 
 ```c#
             ConversionTokenizer.Tokenize(input, abbreviation);
@@ -146,9 +146,9 @@ The Tokenizer splits the string into parts and creates `ConversionTokens` out of
 
 To extend the functionality you simply have to create new ConversionToken classes which inherit from `IConversionToken` and use `AConversionToken` for creation. Then you have to adjust the class `Unitabbreviations` and `ConversionFactors` and the Dictionary in `AConversionToken`.
 
-####Example:
+#### Example:
 
-#####Lets assume metric length is not supported yet :
+##### Lets assume metric length is not supported yet :
 Lets create the class `MetricLengthToken`:
 ```c#
     public class MetricLengthToken : AConversionTokens, IConversionToken
@@ -167,7 +167,7 @@ now we have to adjust our visitorpattern in `IConversionTokenVisitor`:
 ```
 
 now we adjust the `UnitAbbreviations`:
-######in this step you can adjust even more abbreviations to extend the functionality.
+###### in this step you can adjust even more abbreviations to extend the functionality.
 
 ```c#
         public const string Millimeters = "mm";
@@ -205,7 +205,7 @@ now we adjust the `ConversionTokenizer` so it creates the newly defined Token:
 
 now we have a new token in our IEnumerable, which we pass to our ModelBuilder:
 
-###ConversionModelBuilder
+### ConversionModelBuilder
 
 ```c#
             ConversionModelBuilder.BuildFrom(IEnumerable<IConversionToken> tokens)
@@ -253,14 +253,14 @@ This process is always the same for new expressions which are no operators.
 Now we have a working model of our expressions, which we use to calculate and convert our input.
 We do this in the class `UnitConverter`:
 
-###UnitConverter
+### UnitConverter
 
 ```c#
             UnitConverter.Convert(expression, toMetric);
 ```
 The `UnitConverter` takes in our expression that we just created and a bool value, which defines if the convert into the metric or the imperial system.
 
-#####In UnitConverter we have to adjust the methods:
+##### In UnitConverter we have to adjust the methods:
 
 `CalculateIfNoConversionIsNeeded`,
 `CreateReplacementIfBothSidesOfTheOperationNeedToBeConvertedForImperial`,
